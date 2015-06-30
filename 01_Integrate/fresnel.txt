@@ -1,0 +1,37 @@
+ERGASTHRIO YPOLOGISTWN 2
+COMPUTER LABS 2
+
+ASKHSH 2
+EXERCISEE 2
+
+Liarmakopoulos Mixahl
+Liarmakopoulos Michail
+ph2566
+
+Hmeromhnia paradoshs: 13.10.05
+Date of delivery: 13.10.05
+
+Provlhma: Sthn peri8lash Fresnel emfanizontai ta akolu8a oloklhrwmata
+	  pu den exun analytikh lysh:
+
+	  C[u0_]:=Integral[Cos[x]^2,{0,u0}]
+
+	  S[u0_]:=Integral[Sin[x]^2,{0,u0}] 
+
+	  Gia do8en u0>0  8a ypologisw ta parapanw oloklhrwmata.
+
+Problem: At the Fresnel diffraction the following integrals appear which don't have analytic solutions:
+
+	 C[u0_]:= Integral[Cos[x]^2,{0,u0}]
+	 S[u0_]:= Integral[Sin[x]^2,{0,u0}]
+
+	 For given u0>0 I will calculate the above integrals.
+
+Me8odos: Simpson: Gia oloklhrwma synarthshs anamesa sta x=0,N kai vhma h:
+		
+	 I~(h/3)*(f_0+{4f_1+4f_3+...4f_n-1} +{2f_2+2f_4+...+2f_n-2} +f_n)	  
+
+Method: Simpson: For the integral of the function between x=0,N and for step h:
+
+	 I~(h/3)*(f_0+{4f_1+4f_3+...4f_n-1} +{2f_2+2f_4+...+2f_n-2} +f_n)
+
