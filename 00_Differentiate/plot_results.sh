@@ -6,24 +6,27 @@
 #--------------------------------------------------------------
 #!/bin/bash
 
-function plot_two_col_file (){
+function plot_two_col_file(){
     minval=0
     maxval=4219
-    title = $1; input_file = $2; output_file = $3
+    title="$1"; input_file="$2"; output_file="$3";
+    echo $title $input_file $output_file
     gnuplot -persist <<-EOFMarker
         set title "$title"
         set terminal postscript landscape enhanced color dashed lw 1 "DejaVuSans" 12
-        set output "$output_filename"
+        set output "$output_file"
         plot "$input_file" using 1:2 with linespoints
-    EOFMarker
+EOFMarker
     # Convert ps to pdf
-    ps2pdf output_filename
+    ps2pdf "$output_file"
     # Delete ps
-    rm output_filename
+    rm "$output_file"
 }
 
-function main() {
+function main(){
     plot_two_col_file "Plot of the function's sin(x**2)*cos(x**3) first derivative" "./diff1.dat" "diff1.ps"
 }
 
-plot_two_col_file "test" "./diff1.dat" "diff1.ps"
+#plot_two_col_file "test" "./diff1.dat" "diff1.ps"
+
+main
