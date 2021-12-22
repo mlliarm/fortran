@@ -31,10 +31,12 @@
 !       Calling the subroutines.
 
         call simpson(n,h,si,sum1)
-        write(1,*) 'FresnelS(b)=',sum1
+!       write(1,*) 'FresnelS(0, b)=',sum1
+        write(*,*) 'FresnelS(0, b)=', sum1
 
         call simpson(n,h,ci,sum1)
-        write(2,*) 'FresnelC(b)=',sum1
+!       write(2,*) 'FresnelC(0, b)=',sum1
+        write(*,*) 'FresnelC(0, b)=', sum1
 
 !       close(1) ! Closing the written files.
 !       close(2)
