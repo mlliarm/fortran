@@ -10,7 +10,7 @@ function plot_two_col_file(){
     minval=0
     maxval=4219
     title="$1"; input_file="$2"; output_file="$3";
-    echo $title $input_file $output_file
+    #echo $title $input_file $output_file
     gnuplot -persist <<-EOFMarker
         set title "$title"
         set terminal postscript landscape enhanced color dashed lw 1 "DejaVuSans" 12
@@ -25,8 +25,7 @@ EOFMarker
 
 function main(){
     plot_two_col_file "Plot of the function's sin(x**2)*cos(x**3) first derivative" "./diff1.dat" "diff1.ps"
+    plot_two_col_file "Plot of the function's sin(x**2)*cos(x**3) second derivative" "./diff2.dat" "diff2.ps"
 }
-
-#plot_two_col_file "test" "./diff1.dat" "diff1.ps"
 
 main
