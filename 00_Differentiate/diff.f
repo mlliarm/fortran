@@ -36,4 +36,3 @@
 	    f = sin(x*x) * cos(x*x*x)
 	  return 
 	  end
-
