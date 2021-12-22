@@ -17,11 +17,11 @@
       open(2, file='diff2.dat') !2nd derivative
 
       do i = 0, 190
-      x = 1 + dble(i)/10.0
-           diff1 = (f(x+h) - f(x-h)) / (2*h) !1st derivative
-           diff2 = (f(x+h) + f(x-h) - 2*f(x)) / h**2 !2nd derivative
-           write(1, *) x, diff1
-           write(2, *) x, diff2
+            x = 1 + dble(i)/10.0
+            diff1 = (f(x+h) - f(x-h)) / (2*h) !1st derivative
+            diff2 = (f(x+h) + f(x-h) - 2*f(x)) / h**2 !2nd derivative
+            write(1, *) x, diff1
+            write(2, *) x, diff2
       enddo
 
       close(1) ! Closing file 1
