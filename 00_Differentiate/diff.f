@@ -16,7 +16,7 @@
       open(1, file='diff1.dat') !1st derivative
       open(2, file='diff2.dat') !2nd derivative
 
-	do i = 0, 190
+      do i = 0, 190
       x = 1 + dble(i)/10.0
            diff1 = (f(x+h) - f(x-h)) / (2*h) !1st derivative
            diff2 = (f(x+h) + f(x-h) - 2*f(x)) / h**2 !2nd derivative
