@@ -41,8 +41,8 @@
         if ((u-sum1).gt.1E-6) then
             n = 2 * n
             goto 10
-	    else
-            write(*,*) 'I=',sum1,u
+        else
+            write(*,*) 'I=', sum1, u
         end if 
         return
         end
