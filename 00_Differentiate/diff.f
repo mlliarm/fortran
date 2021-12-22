@@ -5,11 +5,10 @@
 
       program diafor
       implicit none
-
 !     Definition of variables/constants
       real*8 diff1, diff2, f, h, x ! Double Precision vars
       integer i
-      parameter(h=1E-5)
+      parameter(h=1.0E-5)
       external f
 
 !     Opening files to be written.
@@ -18,8 +17,8 @@
 
       do i = 0, 190
             x = 1 + dble(i)/10.0
-            diff1 = (f(x+h) - f(x-h)) / (2*h) !1st derivative
-            diff2 = (f(x+h) + f(x-h) - 2*f(x)) / h**2 !2nd derivative
+            diff1 = (f(x+h) - f(x-h)) / (2.0*h) !1st derivative
+            diff2 = (f(x+h) - 2*f(x) + f(x-h)) / (h**2) !2nd derivative
             write(1, *) x, diff1
             write(2, *) x, diff2
       enddo
