@@ -2,7 +2,7 @@ ERGASTHRIO YPOLOGISTWN 2
 COMPUTER LABS 2
 
 ASKHSH 2
-EXERCISEE 2
+EXERCISE 2
 
 Liarmakopoulos Mixahl
 Liarmakopoulos Michail
@@ -22,8 +22,8 @@ Provlhma: Sthn peri8lash Fresnel emfanizontai ta akolu8a oloklhrwmata
 
 Problem: At the Fresnel diffraction the following integrals appear which don't have analytic solutions:
 
-	 C[u0_]:= Integral[Cos[x]^2,{0,u0}]
-	 S[u0_]:= Integral[Sin[x]^2,{0,u0}]
+	 C[u0_]:= Integral[Cos[x^2],{0,u0}]
+	 S[u0_]:= Integral[Sin[x^2],{0,u0}]
 
 	 For given u0>0 I will calculate the above integrals.
 
