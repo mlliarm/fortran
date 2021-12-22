@@ -24,3 +24,7 @@ For the integral of the function with `x` in `[0, N]` and for step `h`:
 ```LaTeX
 I ~ (h/3) * (f_0 + 4*(f_1 + f_3 +...+ f_n-1) + 2*(f_2 + f_4 +...+ f_n-2) + f_n)
 ```
+
+#### Documentation
+- https://en.wikipedia.org/wiki/Fresnel_integral
+- https://en.wikipedia.org/wiki/Simpson%27s_rule
