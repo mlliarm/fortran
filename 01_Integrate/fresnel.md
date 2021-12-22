@@ -9,9 +9,9 @@
 In Fresnel difraction the following integrals appear that don't have analytic solution (written in Mathematica code):
 
 ```Mathematica
-C[u0_] := Integral[Cos[x]^2, {x, 0, u0}]
+C[u0_] := Integral[Cos[x^2], {x, 0, u0}]
 
-S[u0_] := Integral[Sin[x]^2, {x, 0, u0}]
+S[u0_] := Integral[Sin[x^2], {x, 0, u0}]
 ```
 
 For given `u0 > 0` I'll calculate the above integrals using the Simnpson method.
